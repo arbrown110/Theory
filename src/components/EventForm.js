@@ -1,5 +1,5 @@
 import React from 'react'
-import { addEvent } from '../actions/eventsActions'
+import { addEvent } from '../actions/eventActions'
 import { connect } from 'react-redux'
 
 class EventForm extends React.Component {

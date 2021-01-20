@@ -1,4 +1,4 @@
-export function Adventures() {
+export function fetchAdventures() {
   
     return (dispatch) => {
       
