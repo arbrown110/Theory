@@ -10,7 +10,7 @@ class EventEdit extends React.Component{
             description: props.location.state.description,
             krio: props.location.state.krio,
             id: props.match.params.EventId,
-            adventure_id: props.match.params.productId
+            adventure_id: props.match.params.adventureId
         }
     }
 

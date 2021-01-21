@@ -10,6 +10,7 @@ class EventUnique extends React.Component {
 
         return (
             <form id={id}>
+                
                 <div className='title'>{title}</div>
                 <br></br>
                 <div classNme='description'>{description}</div>
