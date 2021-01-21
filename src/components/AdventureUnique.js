@@ -8,18 +8,18 @@ const AdventureUnique = (props) => {
   )
  //console.log(adventure, "...load")
   return (
-    <div className='adventureShowPage'>
-      <div className='adventurePageImage'>
+    <div className='AdventureUnique'>
+      <div className='adventureUniqueImage'>
         {adventure ? (
           <img
             src={adventure.image_url}
             alt='adventure displayed '
-            max-width='500px'
-            max-height='500px'
+            max-width='300px'
+            max-height='300px'
           />
         ) : null}
       </div>
-      <div className='adventurePageDetails'>
+      <div className='adventureUniqueInfo'>
         <h1>{adventure ? adventure.name : null}</h1>
       </div>
       <EventForm adventure={adventure} />

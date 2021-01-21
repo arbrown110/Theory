@@ -1,7 +1,7 @@
 export const addEvent = (event, adventureId) => {
 
     return (dispatch) => {
-        fetch(`http://localhost:3000/adventures/${adventureId}/events`, {
+        fetch(`http://localhost:3001/adventures/${adventureId}/events`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -18,7 +18,7 @@ export const addEvent = (event, adventureId) => {
 
 export const deleteEvent = (eventId, adventureId) => {
     return (dispatch) => {
-        return fetch(`http://localhost:3000/adventures/${adventureId}/events/${eventId}`, {
+        return fetch(`http://localhost:3001/adventures/${adventureId}/events/${eventId}`, {
             method: 'DELETE'
         })
         .then(resp => resp.json())
@@ -29,7 +29,7 @@ export const deleteEvent = (eventId, adventureId) => {
 export const editEvent = (eventId, adventureId, event) => {
 
     return (dispatch) => {
-        fetch(`http://localhost:3000/adventures/${adventureId}/events/${eventId}`, {
+        fetch(`http://localhost:3001/adventures/${adventureId}/events/${eventId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'

@@ -21,20 +21,14 @@ const NavBar = () => {
             >Home
             </NavLink>
             
+
             {/* <NavLink
-                to="/new" exact style={links} activeStyle={{
-                    background: 'darkblue'
-             }}
-            >
-                Add new Topic
-            </NavLink> */}
-            <NavLink
                 to="/adventures" exact style={links} activeStyle={{
                     background: 'darkblue'
                 }}
             >
                 What I've done so far
-            </NavLink>
+            </NavLink> */}
                 
             <NavLink
                 to="/About" exact style={links} activeStyle={{

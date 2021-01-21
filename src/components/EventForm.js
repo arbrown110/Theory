@@ -5,25 +5,27 @@ import { connect } from 'react-redux'
 class EventForm extends React.Component {
   state = {
     star_rating: '',
-    krio: '',
+    description: '',
+    krio: ''
   }
 
-  handleChange = (event) => {
+  handleChange = (e) => {
     this.setState({
-      [event.target.name]: event.target.value,
+      [e.target.name]: e.target.value,
     })
   }
 
-  handleSubmit = (event) => {
-    event.preventDefault()
+  handleSubmit = (e) => {
+    e.preventDefault()
 
-    if (this.state.star_rating === '' || this.state.krio === '') {
-      alert('Please fill out both fields')
+    if (this.state.title === '' || this.state.description === '' || this.state.krio === '') {
+      alert('Please fill out all fields')
     } else {
-      this.props.addReview(this.state, this.props.product.id)
+      this.props.addEvent(this.state, this.props.adventure.id)
       this.setState({
-        star_rating: '',
-        krio: '',
+        title: '',
+        description: '',
+        krio: ''
       })
     }
   }

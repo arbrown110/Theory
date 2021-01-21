@@ -9,7 +9,7 @@ class EventUnique extends React.Component {
         const { id, title, description, krio, adventureId, deleteEvent } = this.props
 
         return (
-            <div id={id}>
+            <form id={id}>
                 <div className='title'>{title}</div>
                 <br></br>
                 <div classNme='description'>{description}</div>
@@ -21,7 +21,7 @@ class EventUnique extends React.Component {
                 </Link>
                 <button onClick={() => deleteEvent(id, adventureId)}>Delete</button>
                 <br></br>
-            </div>
+            </form>
         )
     }
 }
