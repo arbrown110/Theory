@@ -4,9 +4,9 @@ import EventForm from '../components/EventForm'
 
 const AdventureUnique = (props) => {
   let adventure = props.adventures.find(
-    (adventure) => adventure.id == props.match.params.id
+    (adventure) => adventure.id === props.match.params.id
   )
-
+ //console.log(adventure, "...load")
   return (
     <div className='adventureShowPage'>
       <div className='adventurePageImage'>
@@ -23,6 +23,8 @@ const AdventureUnique = (props) => {
         <h1>{adventure ? adventure.name : null}</h1>
       </div>
       <EventForm adventure={adventure} />
+      <br></br>
+      <br></br>
       <EventsContainer adventure={adventure} />
     </div>
   )

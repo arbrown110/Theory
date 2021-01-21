@@ -45,7 +45,7 @@ const NavBar = () => {
             </NavLink>
 
             <NavLink
-                to="/Contacts" exact style={links} activeStyle={{
+                to="/contact" exact style={links} activeStyle={{
                     background: 'darkblue'
              }}
             >Contacts

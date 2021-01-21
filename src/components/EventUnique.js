@@ -4,7 +4,7 @@ import { deleteEvent} from '../actions/eventActions'
 import { Link } from 'react-router-dom'
 
 
-class Event extends React.Component {
+class EventUnique extends React.Component {
     render() {
         const { id, title, description, krio, adventureId, deleteEvent } = this.props
 

@@ -8,9 +8,9 @@ export const addEvent = (event, adventureId) => {
             },
             body: JSON.stringify(event)
         })
-        .then(response => response.json())
+        .then(resp => resp.json())
         .then(adventure => dispatch({
-            type: 'ADD_EVENTt', 
+            type: 'ADD_EVENT', 
             payload: adventure
         }));
     }
@@ -21,7 +21,7 @@ export const deleteEvent = (eventId, adventureId) => {
         return fetch(`http://localhost:3000/adventures/${adventureId}/events/${eventId}`, {
             method: 'DELETE'
         })
-        .then(response => response.json())
+        .then(resp => resp.json())
         .then(adventure => dispatch({type: 'DELETE_EVENT', payload: adventure}))
     }
 }
@@ -36,7 +36,7 @@ export const editEvent = (eventId, adventureId, event) => {
             }, 
             body: JSON.stringify(event)
         })
-        .then(response => response.json())
+        .then(resp => resp.json())
         .then(adventure => dispatch({
             type: 'EDIT_EVENT', 
             payload: adventure
