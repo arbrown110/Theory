@@ -14,8 +14,8 @@ const AdventureUnique = (props) => {
           <img
             src={adventure.image_url}
             alt='adventure displayed '
-            max-width='300px'
-            max-height='300px'
+            max-width='200px'
+            max-height='200px'
           />
         ) : null}
       </div>

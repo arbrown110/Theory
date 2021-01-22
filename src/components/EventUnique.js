@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom'
 
 
 class EventUnique extends React.Component {
+
+
+    //console.log(event, "...load")
     render() {
         const { id, title, description, krio, adventureId, deleteEvent } = this.props
 

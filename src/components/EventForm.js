@@ -1,27 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { addEvent } from '../actions/eventActions'
 import { connect } from 'react-redux'
 
-class EventForm extends React.Component {
+class EventForm extends Component {
   state = {
-    star_rating: '',
+    title: '',
     description: '',
     krio: ''
   }
-
-  handleChange = (e) => {
+  handleChange = e => {
+    const { name, value } = e.target
     this.setState({
-      [e.target.name]: e.target.value,
+        [name]: value
     })
   }
 
   handleSubmit = (e) => {
     e.preventDefault()
-
     if (this.state.title === '' || this.state.description === '' || this.state.krio === '') {
       alert('Please fill out all fields')
     } else {
-      this.props.addEvent(this.state, this.props.adventure.id)
+      this.props.addEvent(this.state, this.props.adventures.id)
       this.setState({
         title: '',
         description: '',
@@ -29,8 +28,11 @@ class EventForm extends React.Component {
       })
     }
   }
-
+/// issue ^^
   render() {
+
+
+
     return (
       <div>
         <h3>what happened today?</h3>
@@ -66,7 +68,7 @@ class EventForm extends React.Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
