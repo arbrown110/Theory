@@ -1,5 +1,5 @@
 export const addEvent = (event, adventureId) => {
-
+    console.log("Did you submit", adventureId)
     return (dispatch) => {
         fetch(`http://localhost:3001/adventures/${adventureId}/events`, {
             method: 'POST',

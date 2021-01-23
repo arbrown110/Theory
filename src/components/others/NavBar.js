@@ -22,13 +22,13 @@ const NavBar = () => {
             </NavLink>
             
 
-            {/* <NavLink
+            <NavLink
                 to="/adventures" exact style={links} activeStyle={{
                     background: 'darkblue'
                 }}
             >
                 What I've done so far
-            </NavLink> */}
+            </NavLink>
                 
             <NavLink
                 to="/About" exact style={links} activeStyle={{

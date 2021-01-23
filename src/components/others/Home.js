@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import mama from '../../mama.gif'
 import { fetchAdventures} from '../../actions/adventuresActions'
-import AdventuresContainer from '../../containers/AdventuresContainer'
+// import AdventuresContainer from '../../containers/AdventuresContainer'
 
 class Home extends React.Component{
 
@@ -23,7 +23,7 @@ class Home extends React.Component{
                 <br></br>
                 <br></br>                
                 <br></br>
-                <AdventuresContainer />
+                {/* <AdventuresContainer /> */}
             </section>
                 
                 <br></br>

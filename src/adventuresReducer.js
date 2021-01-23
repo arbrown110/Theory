@@ -1,7 +1,8 @@
 export const adventuresReducer = (state = { adventures: [] }, action) => {
-
+    console.log(action.payload)
+    debugger
     switch (action.type) {
-  
+      
       case 'FETCH_ADVENTURES':
         return {...state, adventures: action.payload};
   

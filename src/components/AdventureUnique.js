@@ -2,11 +2,13 @@ import React from 'react'
 import EventsContainer from '../containers/EventsContainer'
 import EventForm from '../components/EventForm'
 
+
 const AdventureUnique = (props) => {
+  debugger;
   let adventure = props.adventures.find(
     (adventure) => adventure.id === props.match.params.id
-  )
- //console.log(adventure, "...load")
+    )
+    //console.log(adventure, "...load")
   return (
     <div className='AdventureUnique'>
       <div className='adventureUniqueImage'>

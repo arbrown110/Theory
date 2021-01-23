@@ -3,7 +3,9 @@ import { addAdventure } from '../actions/adventuresActions'
 import { connect} from 'react-redux'
 
 class AdventureForm extends Component {
-
+    componentDidMount() {
+        // debugger;
+    }
     state = {
         name: '',
         image_url: ''
@@ -18,9 +20,11 @@ class AdventureForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
+        //debugger
         this.props.addAdventure(this.state)
     }
 
+    
     render() {
         return (
             <form onSubmit={this.handleSubmit}>

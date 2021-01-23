@@ -2,8 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import AdventureForm from '../components/adventureForm'
+import AdventuresContainer from '../containers/AdventuresContainer'
 
 const  Adventures = (props) => {
+   
     //console.log("hello", props)
     return (
         <div>
@@ -20,7 +22,7 @@ const  Adventures = (props) => {
 
                 
             )}
-
+            <AdventuresContainer />
             <AdventureForm />
         </div>
     )

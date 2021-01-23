@@ -4,18 +4,20 @@ export function fetchAdventures() {
       
       fetch('http://localhost:3001/adventures')
       .then(response => response.json())
-      .then(response => { 
-        console.log(response)
-        return response
-      })
+      // .then(response => { 
+      //   console.log(response, " something happened")
+      //   debugger
+      //   return response
+      // })
       .then(adventureData => dispatch({
-        type: 'FETCH_ADVENTURES', 
+        type: 'FETCH_ADVENTURES1', 
         payload: adventureData
       }));
     };
   }
 
 export const addAdventure = (adventure) => {
+  debugger
     return (dispatch) => {
         fetch('http://localhost:3001/adventures', {
             method: 'POST',

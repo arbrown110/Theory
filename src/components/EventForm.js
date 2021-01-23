@@ -20,7 +20,7 @@ class EventForm extends Component {
     if (this.state.title === '' || this.state.description === '' || this.state.krio === '') {
       alert('Please fill out all fields')
     } else {
-      this.props.addEvent(this.state, this.props.adventures.id)
+      this.props.addEvent(this.state, this.props.adventuresId)
       this.setState({
         title: '',
         description: '',
