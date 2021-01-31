@@ -7,11 +7,13 @@ welcome to the Exodus web application. This is a React based web application tha
 
 ## Future updates
 
-- In the project directory, you can run:
+- Adding more Css to review page.
+- Multiple user interface
+- Section for video blog
 
 ## Installation
 
-- Also clone (backendlink)
+- Also clone (https://github.com/arbrown110/exodus.git)
 - Run rails on backend on localhost:3001
 - Run npm start on  localhost:3000
 
